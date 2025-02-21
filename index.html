@@ -1,94 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chald & Board</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <style>
-        #about p {
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalk & Board - Coaching Center</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Chalk & Board</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="home">
+      <h1>Welcome to Chalk & Board</h1>
+      <p>Your future starts here.</p>
+      <a href="#enroll" class="cta-button">Enroll Now</a>
+    </div>
+  </header>
 
-    <header>
-        <div class="logo">Chalk & Board</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#enroll">Enroll Now</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p>At <strong>Chalk & Board</strong>, we believe that every student has the potential to achieve greatness. Our mission is to provide a nurturing and inspiring learning environment where students can unlock their full potential, build confidence, and excel academically.</p>
+      <p>Founded with a passion for education, we offer personalized coaching in <strong>Math, Science and English</strong> for classes <strong>5</strong> and <strong>6</strong>. Our experienced and dedicated teachers are committed to helping students not only master their subjects but also develop critical thinking, problem-solving, and lifelong learning skills.</p>
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Personalized Attention</strong>: Small class sizes ensure that every student receives individualized support.</li>
+        <li><strong>Expert Faculty</strong>: Our teachers are highly qualified and passionate about teaching.</li>
+        <li><strong>Comprehensive Curriculum</strong>: We offer well-structured courses designed to meet the needs of students at all levels.</li>
+        <li><strong>Modern Facilities</strong>: Our classrooms are equipped with the latest tools and resources to enhance learning.</li>
+        <li><strong>Proven Results</strong>: Our students consistently achieve top grades and gain admission to prestigious institutions.</li>
+      </ul>
+      <p>At <strong>Chalk & Board</strong>, we don’t just teach—we inspire, motivate, and empower. Join us and take the first step toward a brighter future.</p>
+    </div>
+  </section>
 
-    <section id="home" class="hero">
-        <h1>Unlock Your Potential with Chalk & Board</h1>
-        <p>Expert Guidance | Modern Teaching | Best Results</p>
-        <a href="#enroll" class="btn">Enroll Now</a>
-    </section>
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+      <div class="course-item">Math</div>
+      <div class="course-item">Science</div>
+      <div class="course-item">English</div>
+    </div>
+  </section>
 
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>Your Gateway to Academic Excellence! At Chalk & Board, we provide expert coaching for Classes 5 & 6 across CBSE, ICSE, and State Boards</p>
-    </section>
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-list">
+      <div class="testimonial-item">
+        <p>"Chalk & Board helped me improve my grades significantly. Highly recommended!"</p>
+        <span>- Madhumita Roy</span>
+      </div>
+      <div class="testimonial-item">
+        <p>"The teachers are very supportive and the courses are well-structured."</p>
+        <span>- Shuvadrit Banerjee</span>
+      </div>
+    </div>
+  </section>
 
-    <section id="courses" class="section">
-        <h2>Our Courses</h2>
-        <div class="course-list">
-            <div class="course">Mathematics</div>
-            <div class="course">Science</div>
-            <div class="course">English</div>
-        </div>
-    </section>
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300" alt="Classroom">
+      <img src="https://via.placeholder.com/300" alt="Students">
+      <img src="https://via.placeholder.com/300" alt="Event">
+    </div>
+  </section>
 
-    <!-- Enrollment Form -->
-    <section id="enroll" class="section enroll">
-        <h2>Enroll Now</h2>
-        <form id="enrollment-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- FAQ Section -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What courses do you offer?</h3>
+        <p>We offer courses in Math, Science & English.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I enroll?</h3>
+        <p>You can enroll by filling out the enrollment form on our website.</p>
+      </div>
+    </div>
+  </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  <!-- Enrollment Form -->
+  <section id="enroll">
+    <h2>Enroll Now</h2>
+    <form id="enrollment-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" placeholder="Your Phone Number" required>
+      <select id="course" required>
+        <option value="">Select a Course</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="english">English</option>
+        <option value="programming">English & Math</option>
+        <option value="math">Math & Science</option>
+        <option value="science">Science & English</option>
+        <option value="english">English, Science & Math</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>Have questions or want to enroll? Reach out to us!</p>
+      <div class="contact-details">
+        <p><strong>Phone:</strong> <a href="tel:+91 8910312631 | +91 8017129533">+91 8910312631 | +91 8017129533</a></p>
+        <p><strong>Email:</strong> <a href="mailto:chalknboard01@.com">chalknboard01@.com</a></p>
+      </div>
+    </div>
+  </section>
 
-            <label for="course">Select Course:</label>
-            <select id="course" name="course" required>
-                <option value="">-- Choose a Course --</option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="Science">Science</option>
-                <option value="English">English</option>
-                <option value="English">English & Mathematics</option>
-                <option value="English">English & Science</option>
-                <option value="English">Mathematics & Science</option>
-                <option value="English">English, Mathematic & Science</option>
-            </select>
+  <!-- Footer -->
+  <footer>
+    <p>Follow us on:</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 Chalk & Board. All rights reserved.</p>
+  </footer>
 
-            <button type="submit" class="btn">Submit</button>
-        </form>
-        <p id="form-message" class="hidden">Thank you for enrolling! We will contact you soon.</p>
-    </section>
-
-    <section id="contact" class="section contact">
-        <h2>Contact Us</h2>
-        <p>Email: chalknboard01@gmail.com</p>
-        <p>Phone: +91 8910312631 | +91 8017129533</p>
-        <p>Address: Progressive Hall-Girish Park Centre
-            25B Vivekananda Road, Kolkata - 700007. Near Girish Park Metro. In between Girish Park and Ganesh Talkies. Opposite Tejandar Udyan</p>
-        <a href="mailto:chalknboard@gmail.com" class="btn">Send Email</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 NextGen Learning Hub. All rights reserved.</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
-</html>
+</html>                                                                                                                                                                                 here is the html
